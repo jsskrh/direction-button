@@ -1,0 +1,87 @@
+html {
+  font-size: 20px;
+  font-family: "arial";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  background-color: rgb(12, 20, 33);
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.button-container {
+  position: absolute;
+  left: 0.2rem;
+  right: 0.2rem;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  z-index: 99999;
+}
+
+.button {
+  background-color: rgb(217, 252, 0);
+  padding: 1.2rem 2rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-width: 1.1rem;
+  min-height: 1.4rem;
+  overflow: hidden;
+  box-shadow: 1px 27px 25px -8px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.arrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.1rem;
+  max-width: fit-content;
+}
+
+.dot {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 0.2rem;
+  width: 0.2rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.right {
+  padding-left: 5.3rem;
+}
+
+.text-wrapper {
+  padding: 1.05rem 2rem;
+}
+
+span {
+  color: white;
+  font-size: 1.5rem;
+}
